@@ -1,8 +1,9 @@
 import React from 'react';
+import NavBar from '../components/NavBar';
   
 const Blogs = () => {
   return (
-    <h1>You can write your blogs!</h1>
+    <><NavBar /><h1 className='text-indianRed'>You can write your blogs!</h1></>
   );
 };
   
