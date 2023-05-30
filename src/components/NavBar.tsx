@@ -5,6 +5,9 @@ import React from "react";
 import { ReactComponent as IconMenu }  from '../All41Basic-prototype.svg';
   
 const NavBar = () => {
+
+  const [projectsDropdown, setProjectsDropdown] = React.useState(false);
+
   return (
     <>
       <nav className="bg-slate-200 border-gray-200">
@@ -29,6 +32,7 @@ const NavBar = () => {
               <li>
                 <div className="relative">
                   <button
+                    onClick={() => setProjectsDropdown(!projectsDropdown)}
                     id="dropdownNavbar"
                     className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
                   >
@@ -47,64 +51,68 @@ const NavBar = () => {
                       ></path>
                     </svg>
                   </button>
-                  <div className="absolute -left-8 top-full z-10 mt-3 max-w-md overflow-hidden border-l-4 border-savoyBlue bg-slate-200 shadow-lg">
-                    <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
-                        <FontAwesomeIcon icon={faCode} size="xl" />
+                  {projectsDropdown ? (
+                    <div className="absolute -left-8 top-full z-10 mt-3 max-w-md overflow-hidden border-l-4 border-savoyBlue bg-slate-200 shadow-lg">
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                          <FontAwesomeIcon icon={faCode} size="xl" />
+                        </div>
+                        <div className="flex-auto">
+                          <a
+                            href="#"
+                            className="block text-lg font-semibold text-gray-900"
+                          >
+                            Coding
+                            <span className="absolute inset-0"></span>
+                          </a>
+                        </div>
                       </div>
-                      <div className="flex-auto">
-                        <a
-                          href="#"
-                          className="block text-lg font-semibold text-gray-900"
-                        >
-                          Coding
-                          <span className="absolute inset-0"></span>
-                        </a>
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                          <FontAwesomeIcon icon={faShirt} size="xl" />
+                        </div>
+                        <div className="flex-auto">
+                          <a
+                            href="#"
+                            className="block text-lg font-semibold text-gray-900"
+                          >
+                            Clothing
+                            <span className="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                          <FontAwesomeIcon icon={faCamera} size="xl" />
+                        </div>
+                        <div className="flex-auto">
+                          <a
+                            href="#"
+                            className="block text-lg font-semibold text-gray-900"
+                          >
+                            Photography
+                            <span className="absolute inset-0"></span>
+                          </a>
+                        </div>
+                      </div>
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                          <FontAwesomeIcon icon={faMugHot} size="xl" />
+                        </div>
+                        <div className="flex-auto">
+                          <a
+                            href="#"
+                            className="block text-lg font-semibold text-gray-900"
+                          >
+                            Miscellaneous
+                            <span className="absolute inset-0"></span>
+                          </a>
+                        </div>
                       </div>
                     </div>
-                    <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
-                        <FontAwesomeIcon icon={faShirt} size="xl" />
-                      </div>
-                      <div className="flex-auto">
-                        <a
-                          href="#"
-                          className="block text-lg font-semibold text-gray-900"
-                        >
-                          Clothing
-                          <span className="absolute inset-0"></span>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
-                        <FontAwesomeIcon icon={faCamera} size="xl" />
-                      </div>
-                      <div className="flex-auto">
-                        <a
-                          href="#"
-                          className="block text-lg font-semibold text-gray-900"
-                        >
-                          Photography
-                          <span className="absolute inset-0"></span>
-                        </a>
-                      </div>
-                    </div>
-                    <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                      <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
-                        <FontAwesomeIcon icon={faMugHot} size="xl" />
-                      </div>
-                      <div className="flex-auto">
-                        <a
-                          href="#"
-                          className="block text-lg font-semibold text-gray-900"
-                        >
-                          Miscellaneous
-                          <span className="absolute inset-0"></span>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+                  ) : (
+                    <></>
+                  )}
                 </div>
               </li>
               <li>
