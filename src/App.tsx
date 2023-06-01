@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Route, Routes}
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
-import Blogs from './pages/Blogs';
 
 //Color Pallete:
 /*
@@ -23,7 +22,6 @@ function App() {
         <Routes>
         <Route path='/Home'  element={<Home />} />
         <Route path='/About' element={<About/>} />
-        <Route path='/Blogs' element={<Blogs/>} />
         </Routes>
     </Router>
   );

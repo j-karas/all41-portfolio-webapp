@@ -23,5 +23,6 @@
   "include": [
     "src",
     "src/**/*.ts*"
-  ]
+  ],
+  "typeRoots": ["./global.d.ts"]
 }
