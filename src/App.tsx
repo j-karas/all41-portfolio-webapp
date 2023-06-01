@@ -5,6 +5,10 @@ import { BrowserRouter as Router, Route, Routes}
 import './App.css';
 import Home from './pages/Home';
 import About from './pages/About';
+import Coding from './pages/Coding';
+import Clothing from './pages/Clothing';
+import Photography from './pages/Photography';
+import Miscellaneous from './pages/Miscellaneous';
 
 //Color Pallete:
 /*
@@ -22,6 +26,10 @@ function App() {
         <Routes>
         <Route path='/Home'  element={<Home />} />
         <Route path='/About' element={<About/>} />
+        <Route path='/Projects/Coding' element={<Coding/>} />
+        <Route path='/Projects/Clothing' element={<Clothing/>} />
+        <Route path='/Projects/Photography' element={<Photography/>} />
+        <Route path='/Projects/Miscellaneous' element={<Miscellaneous/>} />
         </Routes>
     </Router>
   );
