@@ -3,6 +3,7 @@ import { faCamera, faCode, faMugHot, faShirt } from "@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { ReactComponent as IconMenu }  from '../All41Basic-prototype.svg';
+import '../john_karas_resume_5_8.pdf';
   
 const NavBar = () => {
 
@@ -117,10 +118,29 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="/Blogs"
-                  className="block py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
+                  href="../john_karas_resume_5_8.pdf"
+                  target="_blank"
+                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
                 >
-                  Blogs
+                  Resume{" "}
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor"
+                    className="w-5 h-5 ml-1"
+                    viewBox="0 0 20 20"
+                  >
+                    {" "}
+                    <path
+                      d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"
+                      fillRule="evenodd"
+                      clipRule="evenodd" 
+                    />{" "}
+                    <path 
+                      d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"
+                      fillRule="evenodd"
+                      clipRule="evenodd"  
+                    />{" "}
+                  </svg>
                 </a>
               </li>
               <li>
