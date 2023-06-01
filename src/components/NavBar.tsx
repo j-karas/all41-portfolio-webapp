@@ -60,7 +60,7 @@ const NavBar = () => {
                         </div>
                         <div className="flex-auto">
                           <a
-                            href="#"
+                            href="/Projects/Coding"
                             className="block text-lg font-semibold text-gray-900"
                           >
                             Coding
@@ -74,7 +74,7 @@ const NavBar = () => {
                         </div>
                         <div className="flex-auto">
                           <a
-                            href="#"
+                            href="/Projects/Clothing"
                             className="block text-lg font-semibold text-gray-900"
                           >
                             Clothing
@@ -88,7 +88,7 @@ const NavBar = () => {
                         </div>
                         <div className="flex-auto">
                           <a
-                            href="#"
+                            href="/Projects/Photography"
                             className="block text-lg font-semibold text-gray-900"
                           >
                             Photography
@@ -102,7 +102,7 @@ const NavBar = () => {
                         </div>
                         <div className="flex-auto">
                           <a
-                            href="#"
+                            href="/Projects/Miscellaneous"
                             className="block text-lg font-semibold text-gray-900"
                           >
                             Miscellaneous
