@@ -19,25 +19,26 @@ const About = () => {
         ></img>
       </div>
       <div className="max-w-xs mx-auto flex flex-row">
-        <div onClick={() => openInNewTab('https://www.instagram.com/j.a.karas/')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto">
+        <div onClick={() => openInNewTab('https://www.instagram.com/j.a.karas/')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
           <FontAwesomeIcon icon={faInstagram} size="xl" />
         </div>
-        <div onClick={() => openInNewTab('https://github.com/j-karas')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto">
+        <div onClick={() => openInNewTab('https://github.com/j-karas')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
           <FontAwesomeIcon icon={faGithub} size="xl" />
         </div>
-        <div onClick={() => openInNewTab('https://www.linkedin.com/in/john-a-karas/')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto">
+        <div onClick={() => openInNewTab('https://www.linkedin.com/in/john-a-karas/')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
           <FontAwesomeIcon icon={faLinkedin} size="xl" />
         </div>
       </div>
       <figure className="max-w-lg items-center mx-auto mt-4 m-8 bg-slate-100 rounded-md drop-shadow-md">
         <div className="p-8 text-left space-y-4">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Originally from Hendersonville, TN, a city just outside of Nashville, I graduated
+          from Temple University in Philadelphia, PA. I have a B.S. in Computer Science with
+          a certificate in Computer Security & Digital Forensics. I am a motivated Software
+          Developer currently looking for a job. My interests lie in Frontend Development and 
+          Cybersecurity. My passions outside of programming include clothing, art, 
+          and photography. I created the brand All For One in 2017 with the purpose of sharing 
+          my style and art through clothing. I initially started sewing basic pillows when I was 
+          a child on my mother's old sewing machine. I eventually branched out to creating my own garments.
         </div>
       </figure>
     </>
