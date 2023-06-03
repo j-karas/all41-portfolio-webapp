@@ -3,7 +3,7 @@ import { faCamera, faCode, faMugHot, faShirt } from "@fortawesome/free-solid-svg
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { ReactComponent as IconMenu }  from '../All41Basic-prototype.svg';
-import '../john_karas_resume_5_8.pdf';
+import pdf from '../files/john_karas_resume_5_8.pdf';
   
 const NavBar = () => {
 
@@ -118,9 +118,9 @@ const NavBar = () => {
               </li>
               <li>
                 <a
-                  href="../john_karas_resume_5_8.pdf"
+                  href={pdf}
                   target="_blank"
-                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
+                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue" rel="noreferrer"
                 >
                   Resume{" "}
                   <svg
