@@ -3,6 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes}
     from 'react-router-dom';
 import './App.css';
+import Landing from './pages/Landing';
 import Home from './pages/Home';
 import About from './pages/About';
 import Coding from './pages/Coding';
@@ -24,6 +25,7 @@ function App() {
     <Router>
     {/* <NavBar /> */}
         <Routes>
+        <Route path='/' element={<Landing />} />
         <Route path='/Home'  element={<Home />} />
         <Route path='/About' element={<About/>} />
         <Route path='/Projects/Coding' element={<Coding/>} />
