@@ -14,7 +14,7 @@ const NavBar = () => {
       <nav className="bg-slate-200 border-gray-200">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
-            <IconMenu className="h-12 mr-3" />
+            <IconMenu className="h-12 mr-3" stroke='#425FB6' fill='#425FB6'/>
             <span className="self-center text-gray-900 text-2xl font-semibold whitespace-nowrap">
               John Karas
             </span>
