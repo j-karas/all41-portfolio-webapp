@@ -11,20 +11,20 @@ const NavBar = () => {
 
   return (
     <>
-      <nav className="bg-slate-200 border-gray-200">
+      <nav className="bg-onyx">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
           <a href="#" className="flex items-center">
-            <IconMenu className="h-12 mr-3" stroke='#425FB6' fill='#425FB6'/>
-            <span className="self-center text-gray-900 text-2xl font-semibold whitespace-nowrap">
+            <IconMenu className="h-12 mr-3 transition ease-in-out delay-150 stroke-seaSalt fill-seaSalt hover:-translate-y-1 hover:scale-110 hover:stroke-dodgerBlue hover:fill-dodgerBlue duration-300"/>
+            <span className="self-center text-seaSalt text-2xl font-semibold whitespace-nowrap">
               John Karas
             </span>
           </a>
-          <div className="bg-slate-200 block w-auto" id="navbar-multi-level">
-            <ul className="bg-slate-200 flex flex-row font-medium p-0 space-x-8 mt-0 border-0">
+          <div className="bg-onyx block w-auto" id="navbar-multi-level">
+            <ul className="bg-onyx flex flex-row font-medium p-0 space-x-8 mt-0 border-0">
               <li>
                 <a
                   href="/Home"
-                  className="block py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
+                  className="block py-2 pl-3 pr-4 text-seaSalt hover:bg-transparent border-0 hover:text-dodgerBlue"
                   aria-current="page"
                 >
                   Home
@@ -35,7 +35,7 @@ const NavBar = () => {
                   <button
                     onClick={() => setProjectsDropdown(!projectsDropdown)}
                     id="dropdownNavbar"
-                    className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
+                    className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-seaSalt hover:bg-transparent border-0 hover:text-dodgerBlue"
                   >
                     Projects{" "}
                     <svg
@@ -53,57 +53,57 @@ const NavBar = () => {
                     </svg>
                   </button>
                   {projectsDropdown ? (
-                    <div className="absolute -left-8 top-full z-10 mt-3 max-w-md overflow-hidden border-l-4 border-savoyBlue bg-slate-200 shadow-lg">
-                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                    <div className="absolute -left-8 top-full z-10 mt-3 max-w-md overflow-hidden border-l-4 border-dodgerBlue bg-onyx shadow-lg">
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 border-onyx hover:border-dodgerBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-dodgerBlue bg-onyx">
                           <FontAwesomeIcon icon={faCode} size="xl" />
                         </div>
                         <div className="flex-auto">
                           <a
                             href="/Projects/Coding"
-                            className="block text-lg font-semibold text-gray-900"
+                            className="block text-lg font-semibold text-seaSalt"
                           >
                             Coding
                             <span className="absolute inset-0"></span>
                           </a>
                         </div>
                       </div>
-                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 border-onyx hover:border-dodgerBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-dodgerBlue bg-onyx">
                           <FontAwesomeIcon icon={faShirt} size="xl" />
                         </div>
                         <div className="flex-auto">
                           <a
                             href="/Projects/Clothing"
-                            className="block text-lg font-semibold text-gray-900"
+                            className="block text-lg font-semibold text-seaSalt"
                           >
                             Clothing
                             <span className="absolute inset-0"></span>
                           </a>
                         </div>
                       </div>
-                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 border-onyx hover:border-dodgerBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-dodgerBlue bg-onyx">
                           <FontAwesomeIcon icon={faCamera} size="xl" />
                         </div>
                         <div className="flex-auto">
                           <a
                             href="/Projects/Photography"
-                            className="block text-lg font-semibold text-gray-900"
+                            className="block text-lg font-semibold text-seaSalt"
                           >
                             Photography
                             <span className="absolute inset-0"></span>
                           </a>
                         </div>
                       </div>
-                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 hover:border-savoyBlue">
-                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-savoyBlue bg-slate-200">
+                      <div className="group relative flex items-center gap-x-6 p-4 text-sm leading-6 border-b-2 border-onyx hover:border-dodgerBlue">
+                        <div className="flex h-11 w-11 flex-none items-center justify-center rounded-md text-dodgerBlue bg-onyx">
                           <FontAwesomeIcon icon={faMugHot} size="xl" />
                         </div>
                         <div className="flex-auto">
                           <a
                             href="/Projects/Miscellaneous"
-                            className="block text-lg font-semibold text-gray-900"
+                            className="block text-lg font-semibold text-seaSalt"
                           >
                             Miscellaneous
                             <span className="absolute inset-0"></span>
@@ -120,7 +120,7 @@ const NavBar = () => {
                 <a
                   href={pdf}
                   target="_blank"
-                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue" rel="noreferrer"
+                  className="flex items-center justify-between w-full py-2 pl-3 pr-4 text-seaSalt hover:bg-transparent border-0 hover:text-dodgerBlue" rel="noreferrer"
                 >
                   Resume{" "}
                   <svg
@@ -146,7 +146,7 @@ const NavBar = () => {
               <li>
                 <a
                   href="/About"
-                  className="block py-2 pl-3 pr-4 text-gray-900 hover:bg-transparent border-0 hover:text-savoyBlue"
+                  className="block py-2 pl-3 pr-4 text-seaSalt hover:bg-transparent border-0 hover:text-dodgerBlue"
                 >
                   About
                 </a>

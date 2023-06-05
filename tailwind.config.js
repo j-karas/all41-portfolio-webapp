@@ -17,7 +17,12 @@ module.exports = {
         'savoyBlue': '#425FB6',
         'black': '#070707',
         'platinum': '#E6E6E6',
-        'jet': '#39393A'
+        'jet': '#39393A',
+        'dodgerBlue': '#0496FF',
+        'eerieBlack': '#1F2224',
+        'seaSalt': '#F8F8F8',
+        'onyx': '#353A3D',
+        'outerSpace': '#4A5358'
       }
     }
   },

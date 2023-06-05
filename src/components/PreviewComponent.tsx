@@ -6,15 +6,15 @@ const PreviewComponent = (Props: PreviewCardProps) => {
       <>
         <a
           href={Props.link} 
-          className={Props.left ? "flex flex-row bg-slate-100 max-w-lg mx-auto rounded-md border-l-4 m-4 border-savoyBlue shadow-lg hover:bg-slate-200 hover:cursor-pointer"
-                                : "flex flex-row-reverse bg-slate-100 max-w-lg mx-auto rounded-md border-r-4 m-4 border-savoyBlue shadow-lg hover:bg-slate-200 hover:cursor-pointer"}
+          className={Props.left ? "flex flex-row bg-onyx max-w-lg mx-auto rounded-md border-l-4 m-4 border-dodgerBlue shadow-lg hover:bg-outerSpace hover:cursor-pointer"
+                                : "flex flex-row-reverse bg-onyx max-w-lg mx-auto rounded-md border-r-4 m-4 border-dodgerBlue shadow-lg hover:bg-outerSpace hover:cursor-pointer"}
           >
-          <div className='p-4'>
-            <h3 className="self-center text-gray-900 text-2xl font-semibold whitespace-nowrap">
+          <div className='p-4 text-seaSalt'>
+            <h3 className="self-center text-2xl font-semibold whitespace-nowrap">
               {/* Test */}
               {Props.header}
             </h3>
-            <p>
+            <p className=''>
               {Props.paragraph}
               {/* Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
