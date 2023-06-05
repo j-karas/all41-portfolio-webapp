@@ -19,18 +19,18 @@ const About = () => {
         ></img>
       </div>
       <div className="max-w-xs mx-auto flex flex-row">
-        <div onClick={() => openInNewTab('https://www.instagram.com/j.a.karas/')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
+        <div onClick={() => openInNewTab('https://www.instagram.com/j.a.karas/')} className="text-xl bg-onyx hover:bg-outerSpace hover:cursor-pointer text-dodgerBlue hover:text-seaSalt w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
           <FontAwesomeIcon icon={faInstagram} size="xl" />
         </div>
-        <div onClick={() => openInNewTab('https://github.com/j-karas')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
+        <div onClick={() => openInNewTab('https://github.com/j-karas')} className="text-xl bg-onyx hover:bg-outerSpace hover:cursor-pointer text-dodgerBlue hover:text-seaSalt w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
           <FontAwesomeIcon icon={faGithub} size="xl" />
         </div>
-        <div onClick={() => openInNewTab('https://www.linkedin.com/in/john-a-karas/')} className="text-xl bg-slate-100 hover:bg-slate-200 hover:cursor-pointer text-savoyBlue w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
+        <div onClick={() => openInNewTab('https://www.linkedin.com/in/john-a-karas/')} className="text-xl bg-onyx hover:bg-outerSpace hover:cursor-pointer text-dodgerBlue hover:text-seaSalt w-14 h-14 flex justify-center items-center rounded-md mx-auto drop-shadow-md">
           <FontAwesomeIcon icon={faLinkedin} size="xl" />
         </div>
       </div>
-      <figure className="max-w-lg items-center mx-auto mt-4 m-8 bg-slate-100 rounded-md drop-shadow-md">
-        <div className="p-8 text-left space-y-4">
+      <figure className="max-w-lg items-center mx-auto mt-4 m-8 bg-onyx rounded-md drop-shadow-md">
+        <div className="p-8 text-left space-y-4 text-seaSalt">
           Originally from Hendersonville, TN, a city just outside of Nashville, I graduated
           from Temple University in Philadelphia, PA. I have a B.S. in Computer Science with
           a certificate in Computer Security & Digital Forensics. I am a motivated Software
