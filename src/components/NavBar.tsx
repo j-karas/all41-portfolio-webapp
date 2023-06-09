@@ -13,7 +13,7 @@ const NavBar = () => {
     <>
       <nav className="bg-onyx">
         <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-          <a href="#" className="flex items-center">
+          <a href="/" className="flex items-center">
             <IconMenu className="h-12 mr-3 transition ease-in-out delay-150 stroke-seaSalt fill-seaSalt hover:-translate-y-1 hover:scale-110 hover:stroke-dodgerBlue hover:fill-dodgerBlue duration-300"/>
             <span className="self-center text-seaSalt text-2xl font-semibold whitespace-nowrap">
               John Karas
